@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Paycheck Approximator - rogbone.com </title>
+<link href="style.css" type="text/css" rel="stylesheet"> 
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+.block {
+  display: block;
+  width: 30%;
+  border: none;
+  background-color: white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+<div class="nav">
+ <mark style="background-color: red;font-size:46px;">rogbone.com</mark>
+ <a href="/" style="color: #f1f1f1;text-shadow: 0 0 2px #acacac;">home</a>
+ <a href="/archive">archive</a>
+ <a href="https://blog.rogbone.com" target="_blank">blog</a>
+</div>
+
+<script>
+function calc(wk1, wk2, hrly){
+	var tax = .13;
+	<!-- Tax variable is percentage subtracted off gross paycheck, change if wanted -->
+    var amount = ((+wk1 + +wk2) * hrly);
+    var taxAmount = amount * tax;
+    return amount - taxAmount;
+    }
+    
+function calculate(){
+
+    var week1 = document.getElementById('week1').value;
+    var week2 = document.getElementById('week2').value;
+    var hourly = document.getElementById('hourly').value;
+    var result = calc(week1, week2, hourly);
+    document.getElementById('answer').innerHTML = result;
+    }
+</script>    
+
+    <div class="container">
+	<center>
+	<br><br><br><br><br>
+        <h1 class="text-center">
+            Paycheck Approximator (13% Tax)
+        </h1>
+        <h4 class ="text-center">
+			Kevin Roadarmel
+		</h4>
+		<br>
+        <p><h3>Hours Worked (Week 1):</h3>
+        <input style="color: black; width: 30%;font-size: 150%" id="week1" type="text" placeholder="Enter hours worked during Week 1" /></p>
+        <p><h3>Hours Worked (Week 2, if applicable):</h3>
+        <input style="color: black; width: 30%;font-size: 150%" id="week2" type="text" placeholder="(If applicable) Week 2 hours worked" /></p>
+        <p><h3>Hourly Salary:</h3>
+        <input style="color: black; width: 30%;font-size: 150%" id="hourly" type="text" placeholder="Enter your hourly salary" /></p>
+            <button class="block" id="convert" style="color: black" type="submit"  class="btn btn-info" onclick="calculate()">Calculate</button>
+        
+        <br>
+        <p>
+        <h4>Result:</h4>
+        <textarea id="answer" style="color: black; width: 30%;font-size: 150%" placeholder="Result"></textarea></p>
+		<br><br><br><br>
+		<br><br><br><br>
+	</center>
+    </div>  
+    </body>
+    </html>    
