@@ -8,6 +8,7 @@
 <style>
 .block {
   display: block;
+  border-radius: 25px;
   width: 30%;
   border: none;
   background-color: #D3D3D3;
@@ -19,7 +20,7 @@
 }
 
 .block:hover {
-  background-color: white;
+  background-color: #808080;
   color: black;
 }
 </style>
@@ -49,7 +50,6 @@ function calculate(){
     <div class="container">
     <p><a href="/"> Return to home page</a></p>
 	<center>
-	<br>
         <h1 class="text-center">
             Paycheck Approximator (13% Tax)
         </h1>
@@ -58,17 +58,20 @@ function calculate(){
 		</p>
 		<br>
         <p><h3>Hours Worked (Week 1):</h3>
-        <input style="color: black; width: 30%;font-size: 150%" id="week1" type="text" placeholder="Enter hours worked during Week 1" /></p>
-        <p><h3>Hours Worked (Week 2, if applicable):</h3>
-        <input style="color: black; width: 30%;font-size: 150%" id="week2" type="text" placeholder="(If applicable) Week 2 hours worked" /></p>
-        <p><h3>Hourly Salary:</h3>
-        <input style="color: black; width: 30%;font-size: 150%" id="hourly" type="text" placeholder="Enter your hourly salary" /></p>
-            <button class="block" id="convert" style="color: black" type="submit"  class="btn btn-info" onclick="calculate()">Calculate</button>
-        
+        <input style="color: black; width: 70%;font-size: 150%" id="week1" type="text" placeholder="Enter hours worked (Week 1)" /></p>
         <br>
+        <p><h3>Hours Worked (Week 2, if applicable):</h3>
+        <input style="color: black; width: 70%;font-size: 150%" id="week2" type="text" placeholder="(If applicable) Week 2 hours worked" /></p>
+        <br>
+        <p><h3>Hourly Salary:</h3>
+        <input style="color: black; width: 70%;font-size: 150%" id="hourly" type="text" placeholder="Enter your hourly salary" /></p>
+        <br>
+            <button class="block" id="convert" style="color: black; width:70%;" type="submit"  class="btn btn-info" onclick="calculate()">Calculate</button>
+        
+        <br><br>
         <p>
-        <h4>Result:</h4>
-        <textarea id="answer" style="color: black; width: 30%;font-size: 150%" placeholder="Result"></textarea></p>
+        <h2>Result:</h2>
+        <textarea id="answer" style="color: black; width: 70%;font-size: 150%" placeholder="Result"></textarea></p>
 		<br><br><br><br>
 		<br><br><br><br>
 	</center>
