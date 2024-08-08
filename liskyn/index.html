@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <title>@LISKYN - Find @LISKYN Fansly</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="../style.css" type="text/css" rel="stylesheet">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b95905ccb.js" crossorigin="anonymous"></script>
 
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -23,36 +22,48 @@
 
         .vertical-menu {
             max-width: 100%;
-            margin: 0 auto; /* Centers the menu horizontally */
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .vertical-menu a {
-            display: block; /* Makes the link fill the container's width */
-            width: 90%; /* Responsive width */
-            max-width: 500px; /* Max width for larger screens */
+            display: block;
+            width: 90%;
+            max-width: 500px;
             border-radius: 25px;
             background-color: #eee;
             color: black;
-            padding: 15px; /* Adjusted padding for better spacing */
+            padding: 15px;
             text-decoration: none;
-            box-sizing: border-box; /* Includes padding in the element's width */
-            font-size: 1.5rem; /* Responsive font size */
-            transition: transform 0.3s ease; /* Smooth transition */
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
             text-align: center;
-            margin-bottom: 10px; /* Space between buttons */
+            margin-bottom: 15px; /* Increased spacing between menu items */
         }
 
         .vertical-menu a:hover {
             background-color: #ccc;
-            transform: scale(1.05); /* Slightly increase size on hover */
+            transform: scale(1.05);
         }
 
         .vertical-menu a.active {
             background-color: #04AA6D;
             color: white;
+        }
+
+        /* No underline or border for social media links */
+        h1 span a {
+            border: none;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        h1 span a:hover {
+            transform: scale(1.2);
         }
 
         /* Bounce Animation */
@@ -73,25 +84,15 @@
             animation: bounce 2s infinite;
         }
 
-        /* Hover Effect for Inline Links */
-        h1 span a {
-            transition: transform 0.3s ease; /* Smooth transition for inline links */
-            display: inline-block; /* Allow transformation on inline elements */
-        }
-
-        h1 span a:hover {
-            transform: scale(1.2); /* Increase size on hover for inline links */
-        }
-
         /* Media Queries */
         @media (max-width: 600px) {
             .vertical-menu a {
-                font-size: 1.2rem; /* Smaller font size on small screens */
-                padding: 12px; /* Adjusted padding */
+                font-size: 1.2rem;
+                padding: 12px;
             }
 
             .profile-image {
-                width: 80px; /* Smaller profile image on small screens */
+                width: 80px;
             }
         }
     </style>
@@ -102,10 +103,10 @@
         <h2>@LISKYN</h2>
         <p>21 y/o Lightskin enby</p>
         <h1>
-            <span><a rel="me" href="https://x.com/liskynx" class="fa-brands fa-x" target="_blank"></a></span>
-            <span><a href="https://reddit.com/user/liskyntwink" class="fa-brands fa-reddit" target="_blank"></a></span>
-            <span><a href="https://www.snapchat.com/add/liskynx" class="fa-brands fa-snapchat" target="_blank"></a></span>
-            <span><a href="https://cash.app/$liskyn" class="fa-solid fa-sack-dollar" target="_blank"></a></span>
+            <span><a rel="me" href="https://x.com/liskynx" class="fa-brands fa-x" target="_blank" style="border: none;"></a></span>
+            <span><a href="https://reddit.com/user/liskyntwink" class="fa-brands fa-reddit" target="_blank" style="border: none;"></a></span>
+            <span><a href="https://www.snapchat.com/add/liskynx" class="fa-brands fa-snapchat" target="_blank" style="border: none;"></a></span>
+            <span><a href="https://cash.app/$liskyn" class="fa-solid fa-sack-dollar" target="_blank" style="border: none;"></a></span>
         </h1>
         <div class="vertical-menu">
             <a href="https://x.com/lisyknx" target="_blank">
